@@ -36,5 +36,9 @@ jobs:
       - run: |
           #git config --global user.name Tester
           #git config --global user.email te@st.er
+          curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+          python3 get-pip.py --user
+          python3 -m pip install jupyter matplotlib
+          julia --project=. --eval 'using Pkg; Pkg.instantiate()'
           bash utils/run-all-notebooks
 
