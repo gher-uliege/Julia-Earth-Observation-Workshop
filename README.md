@@ -39,9 +39,9 @@ Open the link `http://127.0.0.1:8888/lab?token=SOME-LONG-TOKEN` with your 48 cha
 ## Installation directly with julia's package manager
 
 * Install [julia](https://julialang.org/downloads/)
-* On Linux, install also matplotlib (e.g. `sudo apt install python3-matplotlib` in Debian/Ubuntu)
+* On Linux, install also matplotlib (e.g. runnning`sudo apt install python3-matplotlib` in terminal for Debian/Ubuntu)
 * Download and uncompress the [code](https://github.com/gher-uliege/Julia-Earth-Observation-Workshop/archive/refs/heads/main.zip) in this repository (or use `git clone https://github.com/gher-uliege/Julia-Earth-Observation-Workshop`)
-* Activate environement
+* Activate and instantiate the environement
 
  ```julia
 using Pkg
