@@ -9,7 +9,7 @@
 
 One can either user Docker or the native julia package manager to install all software dependencies. 
 
-## With Docker
+## Installation with Docker
 
 * Install [Docker](https://docs.docker.com/get-docker/)
 
@@ -18,12 +18,13 @@ docker pull abarth/julia-gher
 docker run -p 8888:8888 -v $PWD:/home/jovyan/data abarth/julia-gher
 ```
 
+where `$PWD` the your current directory which is made available inside the docker container under the `/home/jovyan/data`.
 If you see the error
 `Error starting userland proxy: listen tcp4 0.0.0.0:8888: bind: address already in use.`, it means that the port 8888 is already taken.
 Either you use a different port, or stop the other program currently using port 8888.
 
 
-## Native julia
+## Installation directly with julia's package manager
 
 * Install [julia](https://julialang.org/downloads/)
 * On Linux, install also matplotlib (e.g. `sudo apt install python3-matplotlib` in Debian/Ubuntu)
