@@ -12,6 +12,7 @@ One can either user Docker or the native julia package manager to install all so
 ## Installation with Docker
 
 * Install [Docker](https://docs.docker.com/get-docker/)
+* Run in a terminal run the following commands:
 
 ```bash
 docker pull abarth/julia-gher
@@ -23,6 +24,17 @@ If you see the error
 `Error starting userland proxy: listen tcp4 0.0.0.0:8888: bind: address already in use.`, it means that the port 8888 is already taken.
 Either you use a different port, or stop the other program currently using port 8888.
 
+* Look for these lines:
+
+```
+    To access the server, open this file in a browser:
+        file:///home/jovyan/.local/share/jupyter/runtime/jpserver-7-open.html
+    Or copy and paste one of these URLs:
+        http://1a8fae3e9eb9:8888/lab?token=SOME-LONG-TOKEN
+     or http://127.0.0.1:8888/lab?token=SOME-LONG-TOKEN
+```
+
+Open the link `http://127.0.0.1:8888/lab?token=SOME-LONG-TOKEN` with your 48 characters long token.
 
 ## Installation directly with julia's package manager
 
