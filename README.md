@@ -1,5 +1,13 @@
 # Julia-Earth-Observation-Workshop
 
+## Before the workshop
+
+* It is important to install all the software before the workshop (see below).
+* To get some sample data, you need to register at:
+       * CMEMS: https://data.marine.copernicus.eu/register
+       * NASA Earth data: https://urs.earthdata.nasa.gov/users/new
+
+One can either user Docker or the native julia package manager to install all software dependencies. 
 
 ## With Docker
 
@@ -19,6 +27,7 @@ Either you use a different port, or stop the other program currently using port 
 
 * Install [julia](https://julialang.org/downloads/)
 * On Linux, install also matplotlib (e.g. `sudo apt install python3-matplotlib` in Debian/Ubuntu)
+* Download and uncompress the [code](https://github.com/gher-uliege/Julia-Earth-Observation-Workshop/archive/refs/heads/main.zip) in this repository (or use `git clone https://github.com/gher-uliege/Julia-Earth-Observation-Workshop`)
 * Activate environement
 
  ```julia
