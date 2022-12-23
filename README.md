@@ -3,10 +3,10 @@
 ## Before the workshop
 
 * It is important to install all the software before the workshop (see below).
-* To get some sample data, you need to register at:
-       * CMEMS: https://data.marine.copernicus.eu/register
-       * NASA Earth data: https://urs.earthdata.nasa.gov/users/new
-
+* To get some sample data, you need to register at these sites and have your username and password with you for the workshop:
+     * CMEMS: https://data.marine.copernicus.eu/register
+     * NASA Earth data: https://urs.earthdata.nasa.gov/users/new
+      
 One can either user Docker or the native julia package manager to install all software dependencies. 
 
 ## Installation with Docker
