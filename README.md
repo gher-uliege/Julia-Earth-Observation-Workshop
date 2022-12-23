@@ -26,5 +26,6 @@ using Pkg
 cd("this_directory")
 Pkg.activate(".") # needs to be repeated for every session
 Pkg.instantiate() # install all package
-Pkg.add(url="https://github.com/gher-uliege/DINCAE_utils.jl", rev="main")
 ```
+
+where `"this_directory"` is the directory containing the ipynb files. Note, in Windows a path `C:\Users\Foo\Bar` should be written as `raw"C:\Users\Foo\Bar"` or `"C:\\Users\\Foo\\Bar"`.
