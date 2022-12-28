@@ -36,6 +36,18 @@ Either you use a different port, or stop the other program currently using port 
 
 Open the link `http://127.0.0.1:8888/lab?token=SOME-LONG-TOKEN` with your 48 characters long token.
 
+
+## Installation with Docker without internet
+
+* Get a copy on site of the file `julia-gher.tar.gz` (1.8 GB)
+* Load it with 
+
+```
+docker load < julia-gher.tar.gz
+```
+
+
+
 ## Installation directly with julia's package manager
 
 * Install [julia](https://julialang.org/downloads/)
