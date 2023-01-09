@@ -1,5 +1,8 @@
 # Julia-Earth-Observation-Workshop
 
+
+Link to this webpage: https://tinyurl.com/JuliaEO21-code
+
 ## Before the workshop
 
 * It is important to install all the software before the workshop (see below).
