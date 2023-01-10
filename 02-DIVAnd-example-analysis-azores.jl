@@ -322,6 +322,10 @@ obsid[i]
 
 # +
 resname = "$(varname)_residuals.nc"
+if isfile(resname)
+   rm(resname) # delete previous file if present
+end
+
 DIVAnd.saveobs(resname,"$(varname)_residual",residual,(obslon,obslat,obsdepth,obstime),obsid)
 # -
 

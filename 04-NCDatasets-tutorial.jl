@@ -38,11 +38,17 @@ password = ENV["CMEMS_PASSWORD"];
 # Add username and password to url
 
 url = "https://nrt.cmems-du.eu/thredds/dodsC/SST_MED_SST_L4_NRT_OBSERVATIONS_010_004_a_V2"
-url2 = string(URI(URI(url),userinfo = string(username,":",password)))
+url2 = string(URI(URI(url),userinfo = string(username,":",password)));
 
 # Note this will output the URL with username/password. Add a semicolon to the
 # next line to surpress the output
 
+ds = NCDataset(url2)
+
+# But we will use a local file to save bandwith
+
+close(ds)
+url2 = "SST_MED_SST_L4_NRT_OBSERVATIONS_010_004_a_V2_slice1.nc"
 ds = NCDataset(url2)
 
 # Load the data

@@ -50,12 +50,17 @@ using PyPlot
 using Printf
 using Downloads: download
 
-# ## Data download
+# ## Data download/processing
 #
 # First we define the domain and time interval.
 #
 # The example is tested here for a short time frame but for realistic
 # applications one should use a much longer time-range (like 10, 20 years or more)
+#
+# Place the files modis_subset.nc and data-avg.nc (if you have them already)
+# in your current working directory.
+# They are downloaded is not present, but they are very large (400 MB).
+
 
 # longitude range (east, west)
 lon_range = [-33, -24]
@@ -66,7 +71,7 @@ lat_range = [33.0, 40.0]
 time_range = [DateTime(2017,1,1), DateTime(2019,12,31)]
 
 # local directory
-localdir = expanduser("~/Data/SST-Azores")
+localdir = "."
 # create directory
 mkpath(localdir)
 # filename of the subset
@@ -79,7 +84,7 @@ varname = "sst"
 
 # Results of DINCAE will be placed in a sub-directory under `localdir`
 
-outdir = joinpath(localdir,"Results")
+outdir = "."
 mkpath(outdir)
 
 # Download the MODIS subset:
