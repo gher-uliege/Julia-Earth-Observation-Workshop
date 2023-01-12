@@ -66,7 +66,7 @@ Open the link `http://127.0.0.1:8888/lab?token=SOME-LONG-TOKEN` with your 48 cha
 
 * Install [julia](https://julialang.org/downloads/)
 * On Linux, install also matplotlib (e.g. runnning`sudo apt install python3-matplotlib` in terminal for Debian/Ubuntu)
-* Download and uncompress the [code](https://github.com/gher-uliege/Julia-Earth-Observation-Workshop/archive/refs/heads/main.zip) in this repository (or use `git clone https://github.com/gher-uliege/Julia-Earth-Observation-Workshop`)
+* Download and uncompress the [code](https://github.com/gher-uliege/Julia-Earth-Observation-Workshop/archive/refs/heads/main.zip) in this repository (or use `git clone https://github.com/gher-uliege/Julia-Earth-Observation-Workshop`). The notebooks are already included in the shared USB drive.
 * Activate and instantiate the environement and start jupyter notebook:
 
  ```julia
