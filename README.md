@@ -12,24 +12,29 @@ Link to this webpage: https://tinyurl.com/JuliaEO21-code
       
 One can either user Docker or the native julia package manager to install all software dependencies. 
 
+## Workshop material
+
+* Download and uncompress the [code](https://github.com/gher-uliege/Julia-Earth-Observation-Workshop/archive/refs/heads/main.zip) in this repository (or use `git clone https://github.com/gher-uliege/Julia-Earth-Observation-Workshop`). The notebooks are already included in the shared USB drive.
+
+
 ## Installation with Docker
 
 * Install [Docker](https://docs.docker.com/get-docker/)
-
+* Open a terminal (Windows users, please use a PowerShell terminal)
 
 
 ### Without fast internet
 
-* Get a copy on site of the file `julia-gher.tar.gz` (1.8 GB)
-* Load it with 
+* Locate the file `julia-gher.tar.gz` (1.8 GB) on the folder copied from the USB drive
+* Load it with the following command
 
 ```
-docker load < julia-gher.tar.gz
+docker load -i julia-gher.tar.gz
 ```
 
 ### With fast internet
 
-* Run in a terminal run the following commands (for Windows user this needs to be a PowerShell terminal):
+* Run in a terminal run the following command:
 
 ```bash
 docker pull abarth/julia-gher
@@ -43,7 +48,7 @@ docker pull abarth/julia-gher
 docker run -p 8888:8888 -v ${PWD}:/home/jovyan/data abarth/julia-gher
 ```
 
-where `${PWD}` the your current directory which is made available inside the docker container under the `/home/jovyan/data`.
+where `${PWD}` is automatically replaced by your current directory which is made available inside the docker container under the `/home/jovyan/data`.
 If you see the error
 `Error starting userland proxy: listen tcp4 0.0.0.0:8888: bind: address already in use.`, it means that the port 8888 is already taken.
 Either you use a different port, or stop the other program currently using port 8888.
@@ -66,7 +71,6 @@ Open the link `http://127.0.0.1:8888/lab?token=SOME-LONG-TOKEN` with your 48 cha
 
 * Install [julia](https://julialang.org/downloads/)
 * On Linux, install also matplotlib (e.g. runnning`sudo apt install python3-matplotlib` in terminal for Debian/Ubuntu)
-* Download and uncompress the [code](https://github.com/gher-uliege/Julia-Earth-Observation-Workshop/archive/refs/heads/main.zip) in this repository (or use `git clone https://github.com/gher-uliege/Julia-Earth-Observation-Workshop`). The notebooks are already included in the shared USB drive.
 * Activate and instantiate the environement and start jupyter notebook:
 
  ```julia
