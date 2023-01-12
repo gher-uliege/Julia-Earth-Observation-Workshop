@@ -23,7 +23,7 @@ One can either user Docker or the native julia package manager to install all so
 * Open a terminal (Windows users, please use a PowerShell terminal)
 
 
-### Without fast internet
+### Using docker without fast internet
 
 * Locate the file `julia-gher.tar.gz` (1.8 GB) on the folder copied from the USB drive
 * Load it with the following command
@@ -32,7 +32,7 @@ One can either user Docker or the native julia package manager to install all so
 docker load -i julia-gher.tar.gz
 ```
 
-### With fast internet
+### Using docker with fast internet
 
 * Run in a terminal run the following command:
 
