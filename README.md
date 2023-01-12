@@ -42,6 +42,12 @@ docker pull abarth/julia-gher
 
 ### Start the container
 
+* Go to the directory contaning the notebooks
+
+```bash
+cd "replace this with the directory name with the notebook"
+```
+
 * Run in a terminal run the following commands (for Windows user this needs to be a PowerShell terminal):
 
 ```bash
