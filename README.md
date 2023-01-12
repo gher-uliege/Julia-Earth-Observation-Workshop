@@ -79,3 +79,6 @@ notebook(dir=pwd())
 ```
 
 where `"this_directory"` is the directory containing the ipynb files. Note, in Windows a path `C:\Users\Foo\Bar` should be written as `raw"C:\Users\Foo\Bar"` or `"C:\\Users\\Foo\\Bar"`.
+
+
+Now open the first notebooks file `01-DIVAnd-data-preparation.ipynb` in the jupyter interface.
